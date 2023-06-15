@@ -177,7 +177,7 @@ class DashboardController extends Controller
     }
     public function index4(Request $r)
     {
-        // Ambil pengguna saat ini
+        // Menampilkan semua user
         $user = auth()->user();
         $users = User::where('id', $user->id)->first();
         if ($r->has('search')) {

@@ -14,7 +14,7 @@ class ProfileController extends Controller
         $user = auth()->user(); // Mendapatkan pengguna yang sedang login
         $profile = User::where('id', $user->id)->first();
     
-        return view('dasboard.dasboard2', compact('profile'));
+        return view('dasboard.profile.profile', compact('profile'));
     }
    
     public function update(Request $r, $id)

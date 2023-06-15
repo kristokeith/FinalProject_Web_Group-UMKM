@@ -62,7 +62,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url('dasboard/halaman') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Documentation</span>
+              <span class="menu-title">Product</span>
             </a>
             <a class="nav-link" href="{{ route('profile.index') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
@@ -70,11 +70,11 @@
             </a>
             <a class="nav-link" href="{{ url('/chat') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">chat</span>
+              <span class="menu-title">Chat</span>
             </a>
             <a class="nav-link" href="{{ url('/inbox') }}">
               <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">inbox</span>
+              <span class="menu-title">Inbox</span>
             </a>
           </li>
         </ul>

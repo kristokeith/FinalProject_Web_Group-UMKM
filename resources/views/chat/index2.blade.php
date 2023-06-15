@@ -29,21 +29,6 @@
                 
                 @endif
             @endforeach
-                {{-- @foreach($allMessage as $message)
-                <div class="message sender-message">
-                    <span class="message-content">( {{ $sender->name }} )</span>
-                    <span class="message-content">{{ $message->content }}</span>
-                    <span class="message-timestamp">{{ $message->created_at->format('H:i') }}</span>
-                </div>
-                @endforeach
-                
-                @foreach($receivedMessages as $message)
-                <div class="message receiver-message">
-                    <span class="message-timestamp">{{ $message->created_at->format('H:i') }}</span>
-                    <span class="message-content">{{ $message->content }}</span>
-                    <span class="message-content">( {{ $receiver->name }} )</span>
-                </div>
-                @endforeach --}}
             </div>
             <div class="chat-input">
                 <form method="POST" action="{{ route('chat.send', ['senderId' => $sender->id, 'receiverId' => $receiver->id]) }}">
