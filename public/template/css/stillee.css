@@ -1,0 +1,94 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+.product {
+  margin-bottom: 20px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.stars {
+  display: inline-block;
+  font-size: 24px;
+  color: orange;
+}
+.star-rating {
+  font-size: 24px;
+}
+
+.star-filled {
+  color: orange;
+}
+
+.star-empty {
+  color: grey;
+}
+
+
+.star-rating::before {
+  content: '★★★★★';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, orange var(3), grey var(3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.review-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+.stars {
+    display: inline-block;
+  }
+  
+  .stars input {
+    display: none;
+  }
+  
+  .stars label {
+    float: right;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .stars label:before {
+    content: "\2605";
+    font-size: 25px;
+  }
+  
+  .stars input:checked ~ label,
+  .stars input:checked ~ label ~ label {
+    color: #ffca08;
+  }
+  
